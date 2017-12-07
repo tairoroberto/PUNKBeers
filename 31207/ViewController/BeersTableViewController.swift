@@ -21,7 +21,6 @@ class BeersTableViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func loadBeers() {
@@ -48,10 +47,8 @@ class BeersTableViewController: UITableViewController {
                         self.tableView.reloadData()
 
                     }
-                    
                 }
             }
-            
         })
     }
     
@@ -87,10 +84,7 @@ class BeersTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         selectedBeer = listBeers[indexPath.row]
         performSegue(withIdentifier: "detalhes", sender: self)
-        
     }
-
 }

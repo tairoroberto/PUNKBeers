@@ -39,7 +39,7 @@ class Service {
         let dataTask = session.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
             
             if error != nil {
-                print("Erro with session task")
+                print("Erro with session")
                 onComplete(nil)
             } else {
                 
